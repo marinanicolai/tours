@@ -1,5 +1,9 @@
 function Loading() {
-  return <h2>Tours</h2>;
+  return (
+    <div className="loading">
+      <h2>Loading...</h2>
+    </div>
+  );
 }
 
 export default Loading;
