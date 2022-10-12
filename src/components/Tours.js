@@ -1,6 +1,6 @@
 import Tour from "./Tour";
 
-function Tours({ toursTEST }) {
+function Tours({ toursChild, removeTour }) {
   return (
     <section>
       <div className="title">
@@ -8,8 +8,8 @@ function Tours({ toursTEST }) {
         <div className="underline"></div>
       </div>
       <div>
-        {toursTEST.map((tour) => {
-          return <Tour key={tour.id} {...tour}></Tour>;
+        {toursChild.map((tour) => {
+          return <Tour key={tour.id} {...tour} removeTour={removeTour}></Tour>;
         })}
       </div>
     </section>
